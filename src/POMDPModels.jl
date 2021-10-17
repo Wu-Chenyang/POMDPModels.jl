@@ -11,6 +11,7 @@ using POMDPs
 using POMDPModelTools
 using BeliefUpdaters
 using Distributions
+using LinearAlgebra
 using StaticArrays
 using StatsBase
 using Random
@@ -101,6 +102,13 @@ export
     LightDark1DActionSpace,
     DummyHeuristic1DPolicy,
     SmartHeuristic1DPolicy
+
+include("LightDarkND.jl")
+export
+    LightDarkND,
+    LightDarkNDState,
+    default_sigma,
+    independent_sigma
 
 # Legacy
 
